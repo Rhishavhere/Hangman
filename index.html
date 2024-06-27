@@ -16,13 +16,14 @@
 
   <link rel="stylesheet" href="styles/landing.css">
   <link rel="stylesheet" href="styles/loader.css">
+  <link rel="stylesheet" href="styles/game.css">
 
 
 </head>
 <body>
-  <div id="loader">
+  <!-- <div id="loader">
     <p class="load-text">HANGMAN...</p>
-  </div>
+  </div> -->
   <img id="ceiling-img" class="bg" src="images/ceiling.svg" alt="">
   <div class="hangmans-div">
     <img id="hangmans-img" class="bg" src="images/Hangmans.svg" alt="">
@@ -30,7 +31,9 @@
   <div class="container">
     
     <div id="in" class="header">
-      <div class="header-text">Home</div>
+      <div class="header-text">
+        <a href="index.html">Home</a>
+      </div>
       <div class="header-text">About</div>
       <div class="header-text">
         <a href="https://github.com/Rhishavhere">Github</a>
@@ -49,10 +52,15 @@
       
       <div id ="in" class="start">
         <input type="text" class="username" placeholder="Enter Your Name">
-        <button class="play" onclick="mainload()">PLAY</button>
+        <button class="play" onclick="gameload()">PLAY</button>
       </div>
   
     </div>
+    <div class="game-main">
+      
+    </div>
+  
+  
   </div>
   
 

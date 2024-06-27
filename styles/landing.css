@@ -64,6 +64,8 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position:absolute;
+  top:25vh;
 }
 .title{
   display:flex;
