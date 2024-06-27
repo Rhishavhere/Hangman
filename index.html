@@ -14,20 +14,27 @@
     rel="stylesheet"
   />
 
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles/landing.css">
+  <link rel="stylesheet" href="styles/loader.css">
 
 
 </head>
 <body>
+  <div id="loader">
+    <p class="load-text">HANGMAN...</p>
+  </div>
+  <img id="ceiling-img" class="bg" src="images/ceiling.svg" alt="">
+  <div class="hangmans-div">
+    <img id="hangmans-img" class="bg" src="images/Hangmans.svg" alt="">
+  </div>
   <div class="container">
-    <img id="land-img" src="images/land.svg" alt="">
-    <img id="ceiling-img" src="images/ceiling.svg" alt="">
-    <img id="hangmans-img" src="images/Hangmans.svg" alt="">
     
-    <div class="header">
+    <div id="in" class="header">
       <div class="header-text">Home</div>
       <div class="header-text">About</div>
-      <div class="header-text">Github</div>
+      <div class="header-text">
+        <a href="https://github.com/Rhishavhere">Github</a>
+      </div>
     </div>
   
     <div class="main">
@@ -40,9 +47,9 @@
   
       <div class="intro">The Classical Pen-Paper Guessing Game</div>
       
-      <div class="start">
+      <div id ="in" class="start">
         <input type="text" class="username" placeholder="Enter Your Name">
-        <button class="play">PLAY</button>
+        <button class="play" onclick="mainload()"></button>
       </div>
   
     </div>
@@ -50,6 +57,7 @@
   
 
   <div class="footer">
+    <img id="land-img" class="bg" src="images/land.svg" alt="">
     <div class="creator">Rhishav</div>
     <div class="icons">
       <i class="ri-instagram-line"></i>
@@ -58,5 +66,9 @@
     </div>
   </div>
 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
