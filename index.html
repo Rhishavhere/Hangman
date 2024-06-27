@@ -4,35 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hangman By Rhishav</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Nanum+Pen+Script&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="index.css">
+
+
 </head>
 <body>
+  <div class="container">
+    <img id="land-img" src="images/land.svg" alt="">
+    <img id="ceiling-img" src="images/ceiling.svg" alt="">
+    <img id="hangmans-img" src="images/Hangmans.svg" alt="">
+    
+    <div class="header">
+      <div class="header-text">Home</div>
+      <div class="header-text">About</div>
+      <div class="header-text">Github</div>
+    </div>
   
-  <div class="header">
-    <div class="header-text"></div>
-    <div class="header-text"></div>
-    <div class="header-text"></div>
-  </div>
-
-  <div class="main">
-    
-    <div class="title">
-      <div class="hang">HANG</div>
-      <div class="_">_</div>
-      <div class="an">AN</div>
+    <div class="main">
+      
+      <div class="title">
+        <div class="hang">HANG</div>
+        <div class="_">_</div>
+        <div class="an">AN</div>
+      </div>
+  
+      <div class="intro">The Classical Pen-Paper Guessing Game</div>
+      
+      <div class="start">
+        <input type="text" class="username" placeholder="Enter Your Name">
+        <button class="play">PLAY</button>
+      </div>
+  
     </div>
-
-    <div class="intro">The Classical Crossword Pen-Paper Game</div>
-    
-    <div class="start">
-      <input type="text" class="name" placeholder="Enter Your Name">
-      <button class="play">PLAY</button>
-    </div>
-
   </div>
+  
 
   <div class="footer">
     <div class="creator">Rhishav</div>
-    <div class="icons"></div>
+    <div class="icons">
+      <i class="ri-instagram-line"></i>
+      <i class="ri-github-line"></i>
+      <i class="ri-twitter-x-line"></i>
+    </div>
   </div>
 
 </body>

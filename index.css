@@ -1,0 +1,117 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color:rgb(243, 243, 243);
+}
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#land-img{
+  height:100vh;
+  position:fixed;
+  z-index:-100;
+  object-fit:contain;
+  bottom:120px;
+}
+#ceiling-img{
+  height:100vh;
+  position:fixed;
+  z-index:-100;
+  object-fit:contain;
+  top:0px;
+}
+#hangmans-img{
+  height:60vh;
+  position:fixed;
+  z-index:-100;
+  object-fit:contain;
+  top:15px;
+}
+.header{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color:rgb(8,8,8);
+  border-radius:50px;
+  color:white;
+  width:400px;
+  height:45px;
+  font-family:Poppins;
+  margin-top:120px;
+}
+.main{
+  height:50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.title{
+  display:flex;
+  font-family:Nanum Pen Script;
+  font-weight:600;
+  font-size:90px;
+  margin-bottom:20px;
+}
+.intro{
+  font-family:Poppins;
+  margin-bottom:50px;
+  font-size:20px;
+  color:rgb(114, 114, 114);
+}
+.start{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+}
+.username{
+  height:45px;
+  width:300px;
+  border-radius:5px;
+  border: 1px solid rgba(143, 143, 143, 0.384);
+  padding-left:30px;
+}
+.username::placeholder{
+  color:rgb(160, 160, 160);
+  font-family:Comic Neue;
+  font-weight:600;
+  font-size:16px;
+}
+.play{
+  height:47px;
+  width:100px;
+  border-radius:5px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color:black;
+  font-family:Comic Neue;
+  font-weight:800;
+  color:white;
+
+}
+.footer{
+  background-color:black;
+  color:white;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position:fixed;
+  width:100vw;
+  height:150px;
+  bottom:0;
+  font-family:Poppins;
+  font-size:16px;
+}
+.creator{
+  padding-left:50px;
+}
+.icons{
+  display:flex;
+  gap:30px;
+  padding-right:50px;
+}
