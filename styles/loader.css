@@ -1,15 +1,16 @@
-#loader{
-  display:flex;
+#loader {
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color:rgb(0, 0, 0);
-  width:100vw;
-  height:100vh;
-  position:fixed;
-  z-index:100;
+  background-color: rgb(0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
 }
-#loader p{
-  font-family:Nanum Pen Script;
-  font-size:80px;
-  color:white;
+
+#loader p {
+  font-family: Nanum Pen Script;
+  font-size: 80px;
+  color: white;
 }

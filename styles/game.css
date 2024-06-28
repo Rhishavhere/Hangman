@@ -44,13 +44,15 @@
 
 .word-display .letter.guessed {
   margin: -80px 0 35px;
-  font-family:Nanum Pen Script;
-  font-size:70px;
+  font-family: Nanum Pen Script;
+  font-size: 70px;
   border: none;
 }
-#incorrect{
-  font-size:16px;
+
+#incorrect {
+  font-size: 16px;
 }
+
 .game-box h4 {
   text-align: center;
   font-size: 1rem;
@@ -59,9 +61,9 @@
 }
 
 .game-box h4 b {
-  font-family:Comic Neue;
+  font-family: Comic Neue;
   font-weight: 600;
-  color:rgb(102, 102, 102);
+  color: rgb(102, 102, 102);
 }
 
 .game-box .guesses-text b {
@@ -93,8 +95,9 @@
   padding: 7px;
   width: calc(100% / 9 - 5px);
 }
+
 :where(.keyboard) button:hover {
-  font-size:14px;
+  font-size: 14px;
   color: #befdff;
 }
 
@@ -104,10 +107,10 @@
   background-color: #235357;
 }
 
-.score{
+.score {
   text-align: center;
-  margin-top:50px;
-  font-family:Comic Neue;
-  font-weight:600;
-  font-size:22px;
+  margin-top: 50px;
+  font-family: Comic Neue;
+  font-weight: 600;
+  font-size: 22px;
 }

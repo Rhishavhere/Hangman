@@ -41,18 +41,3 @@ function noloader() {
   const loader = document.querySelector("#loader")
   loader.style.display = "none"
 }
-
-const footer = document.querySelector(".footer")
-const width = footer.clientWidth / 6;
-
-gsap.to("#land-img", {
-  x: -width,
-  duration: 5,
-  ease: "power2.out",
-  repeat: -1,
-  yoyo: true
-})
-
-
-
-

@@ -3,59 +3,75 @@ const wordDisplay = document.querySelector(".word-display")
 const guessesText = document.querySelector(".guesses-text b")
 const hangmanImage = document.querySelector(".hangman-box img")
 
-let username;
+
 
 function gameload() {
+  gsap.to("._", {
+    opacity: 0,
+    duration: 0.1
+  })
+  gsap.to(".m", {
+    top: 0,
+    opacity: 1,
+    duration: 0.7,
+    ease: "bounce.out"
+  })
   gsap.to("#hangmans-img", {
     y: -600,
-    duration: 0.5
+    duration: 0.5,
+    delay: 1
   })
   gsap.to("#ceiling-img", {
     y: -20,
-    duration: 0.5
+    duration: 0.5,
+    delay: 1
   })
   gsap.to(".footer", {
     y: 50,
-    duration: 0.5
+    duration: 0.5,
+    delay: 1
   })
   gsap.to(".footer div", {
     y: -40,
-    duration: 0.5
+    duration: 0.5,
+    delay: 1
   })
   gsap.to(".header", {
     y: -90,
-    duration: 0.5
+    duration: 0.5,
+    delay: 1
   })
   gsap.to(".start", {
     opacity: 0,
-    duration: 0.5
+    duration: 0.5,
+    delay: 1
   })
   gsap.to(".intro", {
     opacity: 0,
-    duration: 0.5
+    duration: 0.5,
+    delay: 1
   })
   gsap.to(".title", {
     opacity: 0,
-    duration: 0
+    duration: 0,
+    delay: 1
   })
   gsap.to(".title", {
     opacity: 0,
     duration: 0.5,
     delay: 0.5,
+    delay: 1,
     display: "none"
   })
-  gsap.to(".intro", { display: "none", delay: 0.5 })
-  gsap.to(".title", { display: "none" })
+  gsap.to(".intro", { display: "none", delay: 1.5 })
+  gsap.to(".title", { display: "none", delay: 1.5 })
 
   gsap.to("#game-main", {
     opacity: 1,
-    duration: 2,
-    delay: 1,
+    duration: 1,
+    delay: 2,
     display: "flex"
   })
-
-  username = document.getElementById("username").value
-  return username
 
 }
 
