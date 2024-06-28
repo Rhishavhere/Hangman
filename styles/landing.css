@@ -1,145 +1,166 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-  background-color:rgb(243, 243, 243);
+
+body {
+  background-color: rgb(243, 243, 243);
   overflow: hidden;
 }
-.container{
-  display:flex;
+
+.container {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.hangmans-div{
-  display:flex;
+
+.hangmans-div {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-#land-img{
-  height:100vh;
-  position:fixed;
-  z-index:-100;
-  object-fit:contain;
-  bottom:120px;
+
+#land-img {
+  height: 100vh;
+  position: fixed;
+  z-index: -100;
+  object-fit: contain;
+  bottom: 120px;
 }
-#ceiling-img{
-  height:100vh;
-  position:fixed;
-  z-index:-100;
-  object-fit:contain;
-  top:0px;
+
+#ceiling-img {
+  height: 100vh;
+  position: fixed;
+  z-index: -100;
+  object-fit: contain;
+  top: 0px;
 }
-#hangmans-img{
-  position:fixed;
-  z-index:-100;
-  object-fit:contain;
-  top:2px;
+
+#hangmans-img {
+  position: fixed;
+  z-index: -100;
+  object-fit: contain;
+  top: 2px;
 
 }
-.header{
-  display:flex;
+
+.header {
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color:rgb(8,8,8);
-  border-radius:50px;
-  color:white;
-  width:400px;
-  height:45px;
-  font-family:Poppins;
-  margin-top:170px;
+  background-color: rgb(8, 8, 8);
+  border-radius: 50px;
+  color: white;
+  width: 400px;
+  height: 45px;
+  font-family: Poppins;
+  margin-top: 170px;
 }
-.header div{
+
+.header div {
   cursor: pointer;
 }
-.header-text a{
-  color:white;
+
+.header-text a {
+  color: white;
   text-decoration: none;
 }
-.main{
-  height:50vh;
+
+.main {
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position:absolute;
-  top:25vh;
+  position: absolute;
+  top: 25vh;
 }
-.title{
-  display:flex;
-  font-family:Nanum Pen Script;
-  font-weight:600;
-  font-size:90px;
-  margin-bottom:20px;
+
+.title {
+  display: flex;
+  font-family: Nanum Pen Script;
+  font-weight: 600;
+  font-size: 102px;
+  margin-bottom: 20px;
 }
-.intro{
-  font-family:Poppins;
-  margin-bottom:50px;
-  font-size:20px;
-  color:rgb(114, 114, 114);
+
+.intro {
+  font-family: Poppins;
+  margin-bottom: 50px;
+  font-size: 20px;
+  color: rgb(114, 114, 114);
 }
-.start{
-  display:flex;
+
+.start {
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap:10px;
+  gap: 10px;
 }
-.username{
-  height:45px;
-  width:300px;
-  border-radius:5px;
+
+#username {
+  height: 45px;
+  width: 300px;
+  border-radius: 5px;
   border: 1px solid rgba(143, 143, 143, 0.384);
-  padding-left:30px;
-  font-family:Comic Neue;
-  font-weight:600;
-  font-size:20px;
+  padding-left: 30px;
+  font-family: Comic Neue;
+  font-weight: 600;
+  font-size: 20px;
 }
-.username::placeholder{
-  color:rgb(160, 160, 160);
-  font-family:Comic Neue;
-  font-weight:600;
-  font-size:16px;
+
+#username::placeholder {
+  color: rgb(160, 160, 160);
+  font-family: Comic Neue;
+  font-weight: 600;
+  font-size: 16px;
 }
-.play{
-  height:47px;
-  width:100px;
-  border-radius:5px;
+
+.play {
+  height: 47px;
+  width: 100px;
+  border-radius: 5px;
   border: 1px solid rgb(0, 0, 0);
-  background-color:black;
-  font-family:Comic Neue;
-  font-weight:800;
-  color:white;
+  background-color: black;
+  font-family: Comic Neue;
+  font-weight: 800;
+  color: white;
   text-decoration: none;
 }
-.play:hover{
-  cursor:pointer;
-  background-color:rgb(34, 34, 34);
+
+.play:hover {
+  cursor: pointer;
+  background-color: rgb(34, 34, 34);
 }
-.footer{
-  background-color:black;
-  color:white;
-  display:flex;
+
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  position:fixed;
-  width:100vw;
-  height:150px;
-  bottom:0;
-  font-family:Poppins;
-  font-size:16px;
-  z-index:-100;
+  position: fixed;
+  width: 100vw;
+  height: 150px;
+  bottom: 0;
+  font-family: Poppins;
+  font-size: 16px;
+  z-index: -100;
 }
-.creator{
-  padding-left:50px;
+
+.creator {
+  padding-left: 50px;
 }
-.icons{
-  display:flex;
-  gap:30px;
-  padding-right:50px;
+
+.icons {
+  display: flex;
+  gap: 30px;
+  padding-right: 50px;
 }
-.icon{
+
+.icon {
   text-decoration: none;
   color: inherit;
 }

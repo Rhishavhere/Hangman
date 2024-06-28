@@ -1,9 +1,113 @@
-.game-main{
-  height:50vh;
+#game-main {
+  height: 50vh;
+  width: 100%;
   display: none;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  position:absolute;
-  top:25vh;
+  position: absolute;
+  top: 25vh;
+  opacity: 0;
+  font-family: Poppins;
+}
+
+.hangman-box {
+  margin-left: 0vw;
+}
+
+.game-box {
+  margin-right: 10vw;
+}
+
+.hangman-box img {
+  user-select: none;
+  width: 500px;
+}
+
+.game-box .word-display {
+  gap: 10px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.word-display .letter {
+  width: 28px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #000;
+}
+
+.word-display .letter.guessed {
+  margin: -80px 0 35px;
+  font-family:Nanum Pen Script;
+  font-size:70px;
+  border: none;
+}
+#incorrect{
+  font-size:16px;
+}
+.game-box h4 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.game-box h4 b {
+  font-family:Comic Neue;
+  font-weight: 600;
+  color:rgb(102, 102, 102);
+}
+
+.game-box .guesses-text b {
+  color: #50b1b4;
+}
+
+.game-box .keyboard {
+  display: flex;
+  max-width: 500px;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+:where(.keyboard) button {
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: #222222;
+}
+
+.keyboard button {
+  padding: 7px;
+  width: calc(100% / 9 - 5px);
+}
+:where(.keyboard) button:hover {
+  font-size:14px;
+  color: #befdff;
+}
+
+.keyboard button[disabled] {
+  pointer-events: none;
+  opacity: 0.8;
+  background-color: #235357;
+}
+
+.score{
+  text-align: center;
+  margin-top:50px;
+  font-family:Comic Neue;
+  font-weight:600;
+  font-size:22px;
 }
