@@ -30,7 +30,7 @@ tl.from("#hangmans-img", {
 tl.from(".title", {
   scale: 0,
   duration: 1,
-  ease: "elastic.out(1.5,0.3)"
+  ease: "elastic.out(1,0.3)"
 })
 tl.from("#in", {
   y: 10,
