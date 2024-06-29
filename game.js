@@ -3,9 +3,24 @@ const wordDisplay = document.querySelector(".word-display")
 const guessesText = document.querySelector(".guesses-text b")
 const hangmanImage = document.querySelector(".hangman-box img")
 
+let username = 'Player';
+
+const right = new Audio();
+right.src = "audio/right.mp3";
+
+const wrong = new Audio();
+wrong.src = "audio/wrong.mp3";
+
+const victory = new Audio();
+victory.src = "audio/victory.mp3";
 
 
 function gameload() {
+
+  username = document.getElementById('username').value || 'Player';
+  document.querySelector(".score").innerText = `Best of luck, ${username}!`;
+
+
   gsap.to("._", {
     opacity: 0,
     duration: 0.1
@@ -107,12 +122,14 @@ const initGame = (button, clickedLetter) => {
         correctLetters.push(letter)
         wordDisplay.querySelectorAll("li")[index].innerText = letter
         wordDisplay.querySelectorAll("li")[index].classList.add("guessed")
+        right.play()
       }
     })
   }
   else {
     wrongGuessCount++;
     hangmanImage.src = `images/${wrongGuessCount + 1}.svg`
+    wrong.play()
   }
   guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
   button.disabled = true;
@@ -132,13 +149,14 @@ for (let i = 97; i <= 122; i++) {
 function gameOver(isVictory) {
   if (isVictory) {
     score++;
-    document.querySelector(".score").innerText = `Score = ${score}`
+    document.querySelector(".score").innerText = `${username}'s Score: ${score}`
+    victory.play()
     getRandowWord()
   }
   else {
     fail()
     score = 0
-    document.querySelector(".score").innerText = `No Current Score`
+    document.querySelector(".score").innerText = `${username}'s Score: 0`
   }
 }
 
