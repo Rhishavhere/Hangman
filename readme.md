@@ -1,2 +1,3 @@
-![image](https://github.com/Rhishavhere/Hangman/assets/136879936/ba71076d-8035-4abf-a9cf-7728a2db7835)
+![image](https://github.com/Rhishavhere/Hangman/assets/136879936/dc4d3136-cf84-4ac7-b84f-e95ac7cd10ab)
+
 
