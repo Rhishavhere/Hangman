@@ -3,6 +3,8 @@ const wordDisplay = document.querySelector(".word-display")
 const guessesText = document.querySelector(".guesses-text b")
 const hangmanImage = document.querySelector(".hangman-box img")
 
+let isClicked = false
+
 let username = 'Player';
 
 const right = new Audio();
@@ -18,6 +20,12 @@ victory.src = "audio/victory.mp3";
 function gameload() {
 
   username = document.getElementById('username').value || 'Player';
+  if (username.toUpperCase() === "ARCHITA") {
+    gsap.to(".forher", {
+      display: "flex"
+    })
+    document.querySelector(".creator").innerText = "Rhishav loves you btw"
+  }
   document.querySelector(".score").innerText = `Best of luck, ${username}!`;
 
 
@@ -109,6 +117,7 @@ const resetGame = () => {
 const getRandowWord = () => {
   const { word, hint } = wordList[Math.floor(Math.random() * wordList.length)]
   currentWord = word;
+  document.querySelector(".answer").innerText = `Answer : ${currentWord}`
   document.querySelector(".hint-text b").innerText = hint;
   resetGame();
 
@@ -174,4 +183,19 @@ function fail() {
   }, 1000)
 }
 
-
+function reveal() {
+  if (!isClicked) {
+    console.log("open")
+    gsap.to(".answer", {
+      opacity: 1
+    })
+    isClicked = true
+  }
+  else {
+    console.log("close")
+    gsap.to(".answer", {
+      opacity: 0
+    })
+    isClicked = false
+  }
+}

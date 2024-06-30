@@ -16,6 +16,9 @@
 
 .game-box {
   margin-right: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hangman-box img {
@@ -110,7 +113,32 @@
 .score {
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 50px;
   font-family: Comic Neue;
   font-weight: 600;
   font-size: 22px;
+}
+
+.forher {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answer {
+  opacity: 0;
+}
+
+.revealbutton {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.revealbutton:hover {
+  cursor: pointer;
+}
+
+.reveal {
+  font-size: 16px;
+  font-family: poppins;
 }
